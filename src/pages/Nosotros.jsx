@@ -14,7 +14,7 @@ export default function Nosotros() {
     />
     <main className="page-content">
 
-      <section className="inner-hero nosotros-hero" style={{ backgroundImage: `url(${c.heroImage || '/nosotros.jpeg'})` }}>
+      <section className="inner-hero nosotros-hero" style={{ backgroundImage: `url(${c.heroImage || 'https://placehold.co/1920x900/1E1B4B/818CF8?text=Nosotros'})` }}>
         <div className="inner-hero-overlay" />
         <div className="inner-hero-content">
           <span className="section-pretitle">Quiénes somos</span>

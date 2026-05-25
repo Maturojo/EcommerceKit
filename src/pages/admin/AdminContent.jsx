@@ -12,19 +12,19 @@ const TABS = [
    Preview components (render en tiempo real)
 ───────────────────────────────────────────── */
 const P = {
-  wrap:    { fontFamily: 'Georgia, serif', color: '#2d1a0e' },
-  label:   { fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1.5, color: '#9c664d', marginBottom: 6 },
+  wrap:    { fontFamily: 'system-ui, sans-serif', color: '#111827' },
+  label:   { fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1.5, color: '#6366F1', marginBottom: 6 },
   section: { marginBottom: 18 },
-  card:    { background: '#f8f4ef', borderRadius: 8, padding: '10px 12px', marginBottom: 8 },
+  card:    { background: '#F8F8FA', borderRadius: 8, padding: '10px 12px', marginBottom: 8 },
   grid2:   { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 },
   row:     { display: 'flex', gap: 10, alignItems: 'flex-start', marginBottom: 8 },
-  divider: { borderBottom: '1px solid #e8dfd4', marginBottom: 12, paddingBottom: 12 },
+  divider: { borderBottom: '1px solid #E5E5EA', marginBottom: 12, paddingBottom: 12 },
 }
 
 function PreviewHero({ image, pretitle, title, subtitle }) {
   return (
     <div style={{
-      background: `linear-gradient(rgba(0,0,0,.48), rgba(0,0,0,.48)), url(${image || '/hero.jpeg'}) center/cover no-repeat`,
+      background: `linear-gradient(rgba(0,0,0,.48), rgba(0,0,0,.48)), url(${image || 'https://placehold.co/1920x1080/1E1B4B/818CF8?text=Hero'}) center/cover no-repeat`,
       padding: '28px 18px', borderRadius: 10, color: '#fff', marginBottom: 14,
     }}>
       {pretitle && <p style={{ fontSize: 9, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 5, opacity: .75 }}>{pretitle}</p>}

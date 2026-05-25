@@ -1,14 +1,14 @@
 /* ── Admin variables ── */
 .admin-layout, .admin-login {
-  --bg: #1A100A;
-  --surface: #261710;
-  --surface2: #321E15;
-  --border: #4A2C1E;
-  --text: #F0EBE3;
-  --text-soft: #A89080;
-  --card: #2E1C14;
-  --accent: #B07A5A;
-  --accent-hover: #C8956C;
+  --bg: #0F172A;
+  --surface: #1E293B;
+  --surface2: #334155;
+  --border: #475569;
+  --text: #F1F5F9;
+  --text-soft: #94A3B8;
+  --card: #1E293B;
+  --accent: #6366F1;
+  --accent-hover: #818CF8;
   --danger: #e63946;
   --warn: #f4a261;
   --blue: #4895ef;

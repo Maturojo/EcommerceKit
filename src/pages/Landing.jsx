@@ -31,7 +31,7 @@ export default function Landing() {
     <main className="landing">
 
       {/* ── Hero ── */}
-      <section className="landing-hero" style={{ backgroundImage: `url(${c.heroImage || '/hero.jpeg'})` }}>
+      <section className="landing-hero" style={{ backgroundImage: `url(${c.heroImage || 'https://placehold.co/1920x1080/1E1B4B/818CF8?text=Hero+Image'})` }}>
         <div className="landing-hero-overlay" />
         <div className="landing-hero-content">
           <span className="hero-pretitle">{c.heroPretitle}</span>

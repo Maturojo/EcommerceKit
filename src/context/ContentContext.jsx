@@ -7,7 +7,7 @@ export const DEFAULT_CONTENT = {
     heroPretitle:  'Moda Argentina',
     heroTitle:     'Tu estilo,\ntu identidad',
     heroSubtitle:  'Ropa, accesorios y calzado seleccionados para que te veas increíble todos los días. Tendencias que llegan directo a tu puerta.',
-    heroImage:     '/hero.jpeg',
+    heroImage:     'https://placehold.co/1920x1080/1E1B4B/818CF8?text=Hero+Image',
     aboutTitle:    'Más que moda, una actitud',
     aboutText1:    'MiTienda nació de una idea simple: hacer que la moda de calidad sea accesible para todos. Seleccionamos cada pieza con cuidado para que encuentres exactamente lo que buscás.',
     aboutText2:    'Trabajamos con marcas y diseñadores locales para ofrecerte productos únicos que combinan estilo, calidad y precio justo.',
@@ -27,7 +27,7 @@ export const DEFAULT_CONTENT = {
     ],
   },
   nosotros: {
-    heroImage:    '/nosotros.jpeg',
+    heroImage:    'https://placehold.co/1920x900/1E1B4B/818CF8?text=Nosotros',
     heroTitle:    'Una historia de moda y pasión',
     heroSubtitle: 'Somos un equipo apasionado por la moda que cree que vestirse bien no debería ser un lujo.',
     storyTitle:   '¿Cómo empezó todo?',

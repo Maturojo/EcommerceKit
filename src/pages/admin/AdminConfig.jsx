@@ -15,13 +15,13 @@ async function confirmarConPassword(titulo, texto, colorBoton) {
     cancelButtonText: 'Cancelar',
     confirmButtonText: 'Confirmar reset',
     confirmButtonColor: colorBoton || '#e63946',
-    background: '#261710',
-    color: '#F0EBE3',
-    inputAttributes: { style: 'background:#321E15;color:#F0EBE3;border:1px solid #4A2C1E;padding:8px 12px;border-radius:8px;width:100%' },
+    background: '#1E293B',
+    color: '#F1F5F9',
+    inputAttributes: { style: 'background:#0F172A;color:#F1F5F9;border:1px solid #475569;padding:8px 12px;border-radius:8px;width:100%' },
   })
   if (!pass) return false
   if (pass !== ADMIN_PASS) {
-    Swal.fire({ title: '❌ Contraseña incorrecta', icon: 'error', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#9c664d' })
+    Swal.fire({ title: '❌ Contraseña incorrecta', icon: 'error', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#6366F1' })
     return false
   }
   return true
@@ -31,21 +31,21 @@ async function resetEstadisticas() {
   const ok = await confirmarConPassword('¿Resetear estadísticas?', 'Se borrarán todos los datos de analytics. No se puede deshacer.')
   if (!ok) return
   localStorage.removeItem('ms_analytics')
-  Swal.fire({ title: '✅ Estadísticas reseteadas', icon: 'success', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#9c664d' })
+  Swal.fire({ title: '✅ Estadísticas reseteadas', icon: 'success', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#6366F1' })
 }
 
 async function resetPedidos() {
   const ok = await confirmarConPassword('¿Resetear pedidos?', 'Se eliminarán TODOS los pedidos de la base de datos. No se puede deshacer.')
   if (!ok) return
   await fetch(`${API}/orders?action=reset`, { method: 'DELETE' })
-  Swal.fire({ title: '✅ Pedidos reseteados', icon: 'success', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#9c664d' })
+  Swal.fire({ title: '✅ Pedidos reseteados', icon: 'success', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#6366F1' })
 }
 
 async function resetClientes() {
   const ok = await confirmarConPassword('¿Resetear clientes?', 'Se eliminarán TODOS los clientes registrados. No se puede deshacer.')
   if (!ok) return
   await fetch(`${API}/users?action=reset`, { method: 'DELETE' })
-  Swal.fire({ title: '✅ Clientes reseteados', icon: 'success', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#9c664d' })
+  Swal.fire({ title: '✅ Clientes reseteados', icon: 'success', background: '#261710', color: '#F0EBE3', confirmButtonColor: '#6366F1' })
 }
 
 export default function AdminConfig() {

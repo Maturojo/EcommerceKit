@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
-            <img src="/logo.jpeg" alt="MiTienda" className="footer-logo-img" />
+            <span className="logo-text" style={{ fontSize: '1.4rem', fontWeight: 800, color: '#fff' }}>MiTienda</span>
           </Link>
           <p>Moda de calidad al mejor precio. Ropa, accesorios y calzado con envíos a todo Argentina.</p>
         </div>
