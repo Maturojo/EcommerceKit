@@ -57,7 +57,7 @@ export default function AdminOrders() {
       'Envío':     o.envio?.nombre || '',
       'Productos': (o.items || []).map(i => `${i.name} x${i.quantity}`).join(' | '),
     }))
-    exportToExcel(rows, 'Pedidos', 'mateshop-pedidos')
+    exportToExcel(rows, 'Pedidos', 'ecommercekit-pedidos')
   }
 
   const handleTracking = async (order) => {

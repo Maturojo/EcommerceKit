@@ -31,7 +31,7 @@ export default function CartSuggestions() {
 
   return (
     <div className="cart-suggestions">
-      <h3 className="cart-suggestions-title">🧉 Compraron juntos</h3>
+      <h3 className="cart-suggestions-title">✨ Compraron juntos</h3>
       <div className="cart-suggestions-list">
         {suggestions.map(p => (
           <div key={p.id} className="cart-suggestion-card">

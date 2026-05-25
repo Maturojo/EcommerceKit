@@ -18,7 +18,7 @@ export default function Nosotros() {
         <div className="inner-hero-overlay" />
         <div className="inner-hero-content">
           <span className="section-pretitle">Quiénes somos</span>
-          <h1 className="inner-hero-title">{c.heroTitle || 'Una historia de mates y pasión artesanal'}</h1>
+          <h1 className="inner-hero-title">{c.heroTitle || 'Una historia de moda y pasión'}</h1>
           <p className="inner-hero-sub">{c.heroSubtitle}</p>
         </div>
       </section>

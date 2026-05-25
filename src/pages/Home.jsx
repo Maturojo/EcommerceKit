@@ -75,15 +75,15 @@ export default function Home() {
   return (
     <>
     <SEO
-      title="Tienda de Mates — Mates artesanales, bombillas y yerbas"
+      title="Tienda — Ropa, Accesorios y Calzado"
       canonical="/tienda"
-      description="Comprá mates artesanales de calabaza, porongo, cerámica y acero. Bombillas de alpaca, yerbas seleccionadas y accesorios. Envíos a todo Argentina."
+      description="Comprá ropa de moda, accesorios y calzado online. Las últimas tendencias al mejor precio con envíos a todo Argentina."
     />
     <main className="home">
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">Todo lo que necesitás<br />para tu mate</h1>
-          <p className="hero-subtitle">Mates artesanales, bombillas, yerbas y mucho más. Envíos a todo el país.</p>
+          <h1 className="hero-title">Encontrá tu estilo<br />en un solo lugar</h1>
+          <p className="hero-subtitle">Ropa, accesorios y calzado de moda. Envíos a todo el país.</p>
         </div>
       </section>
 

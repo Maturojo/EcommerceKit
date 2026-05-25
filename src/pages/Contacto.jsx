@@ -41,7 +41,7 @@ export default function Contacto() {
   const { content } = useContent()
   const c = content.contacto
 
-  const WA_URL = `https://wa.me/${c.whatsapp}?text=` + encodeURIComponent('Hola! Tengo una consulta 🧉')
+  const WA_URL = `https://wa.me/${c.whatsapp}?text=` + encodeURIComponent('Hola! Tengo una consulta 👋')
   const IG_URL = c.instagram
 
   const [form, setForm]   = useState({ nombre: '', email: '', asunto: '', mensaje: '' })
@@ -61,7 +61,7 @@ export default function Contacto() {
     <SEO
       title="Contacto — Escribinos"
       canonical="/contacto"
-      description="Contactate con Mate&Co por WhatsApp, Instagram o email. Respondemos en el día. Mar del Plata, Argentina."
+      description="Contactate con MiTienda por WhatsApp, Instagram o email. Respondemos en el día."
     />
     <main className="page-content">
 

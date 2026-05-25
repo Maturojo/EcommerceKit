@@ -43,7 +43,7 @@ export default function Login() {
     <main className="auth-page">
       <div className="auth-card">
         <div className="auth-header">
-          <span className="auth-icon">🧉</span>
+          <span className="auth-icon">🛍️</span>
           <h1>Iniciar sesión</h1>
           <p>Bienvenido de nuevo</p>
         </div>

@@ -53,7 +53,7 @@ const newVariant = () => ({
   images: [''],
 })
 
-const emptyForm = (firstCat = 'mates') => ({
+const emptyForm = (firstCat = 'ropa') => ({
   name: '',
   sku: '',
   description: '',
@@ -104,7 +104,7 @@ export default function AdminProducts() {
         'Imágenes':     (v.images || []).join(' | '),
       }))
     })
-    exportToExcel(rows, 'Productos', 'mateshop-productos')
+    exportToExcel(rows, 'Productos', 'ecommercekit-productos')
   }
 
   const handleImport = async (e) => {
@@ -270,7 +270,7 @@ export default function AdminProducts() {
         }))
       : [{ ...newVariant(), name: 'Única', price: String(product.price || ''), stock: String(product.stock || ''), images: [product.image || ''] }]
 
-    setForm({ name: product.name, sku: product.sku || '', description: product.description || '', category: product.category || 'mates', variants })
+    setForm({ name: product.name, sku: product.sku || '', description: product.description || '', category: product.category || 'ropa', variants })
     setEditingId(product.id)
     setOpenVariant(0)
     setShowForm(true)
@@ -425,7 +425,7 @@ export default function AdminProducts() {
             <div className="form-row">
               <div className="admin-form-group">
                 <label>Nombre *</label>
-                <input name="name" value={form.name} onChange={handleChange} required className="admin-input" placeholder="Mate de calabaza..." />
+                <input name="name" value={form.name} onChange={handleChange} required className="admin-input" placeholder="Remera oversize negra..." />
               </div>
               <div className="admin-form-group">
                 <label>Código / SKU</label>

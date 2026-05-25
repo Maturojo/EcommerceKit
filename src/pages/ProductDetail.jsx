@@ -78,7 +78,7 @@ export default function ProductDetail() {
     name: product.name,
     description: product.description,
     image: images[0] || '',
-    brand: { '@type': 'Brand', name: 'Mate&Co' },
+    brand: { '@type': 'Brand', name: 'MiTienda' },
     offers: {
       '@type': 'AggregateOffer',
       lowPrice: minPrice,
@@ -87,7 +87,7 @@ export default function ProductDetail() {
       availability: variant.stock > 0
         ? 'https://schema.org/InStock'
         : 'https://schema.org/OutOfStock',
-      seller: { '@type': 'Organization', name: 'Mate&Co' },
+      seller: { '@type': 'Organization', name: 'MiTienda' },
     },
   }
 

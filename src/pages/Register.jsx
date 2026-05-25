@@ -24,7 +24,7 @@ export default function Register() {
     const result = await register({ nombre: form.nombre, email: form.email, password: form.password })
     if (result.ok) {
       await Swal.fire({
-        title: `¡Bienvenido/a, ${form.nombre.split(' ')[0]}! 🧉`,
+        title: `¡Bienvenido/a, ${form.nombre.split(' ')[0]}! 🛍️`,
         text: 'Tu cuenta fue creada con éxito. ¡Ya sos parte de la comunidad!',
         icon: 'success',
         confirmButtonText: 'Ir a mi cuenta',
@@ -32,7 +32,7 @@ export default function Register() {
         background: '#FDF9F0',
         color: '#1a1209',
         iconColor: '#9c664d',
-        customClass: { popup: 'swal-mate' },
+        customClass: { popup: 'swal-tienda' },
         timer: 4000,
         timerProgressBar: true,
       })
@@ -47,9 +47,9 @@ export default function Register() {
     <main className="auth-page">
       <div className="auth-card">
         <div className="auth-header">
-          <span className="auth-icon">🧉</span>
+          <span className="auth-icon">🛍️</span>
           <h1>Crear cuenta</h1>
-          <p>Unite a la comunidad mateadora</p>
+          <p>Unite y empezá a comprar online</p>
         </div>
 
         <form className="auth-form" onSubmit={handleSubmit}>

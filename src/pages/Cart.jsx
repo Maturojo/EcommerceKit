@@ -13,7 +13,7 @@ export default function Cart() {
     return (
       <main className="cart-page">
         <div className="empty-cart">
-          <span className="empty-icon">🧉</span>
+          <span className="empty-icon">🛍️</span>
           <h2>Tu carrito está vacío</h2>
           <p>Todavía no agregaste ningún producto. ¡Dale una vuelta a la tienda!</p>
           <Link to="/tienda" className="btn-primary">Ver productos</Link>

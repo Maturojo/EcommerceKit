@@ -43,7 +43,7 @@ export default function SearchOverlay({ open, onClose }) {
             ref={inputRef}
             type="text"
             className="search-modal-input"
-            placeholder="Buscá mates, bombillas, yerbas..."
+            placeholder="Buscá remeras, accesorios, zapatillas..."
             value={query}
             onChange={e => setQuery(e.target.value)}
           />
@@ -79,7 +79,7 @@ export default function SearchOverlay({ open, onClose }) {
           <div className="search-hints">
             <p>Sugerencias:</p>
             <div className="search-tags">
-              {['Mate calabaza', 'Bombilla alpaca', 'Yerba premium', 'Termo Stanley', 'Kit regalo'].map(s => (
+              {['Remera oversize', 'Zapatillas blancas', 'Cartera cuero', 'Conjunto deportivo', 'Accesorios verano'].map(s => (
                 <button key={s} className="search-tag" onClick={() => setQuery(s)}>{s}</button>
               ))}
             </div>

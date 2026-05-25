@@ -57,7 +57,7 @@ export default function Checkout() {
     return (
       <main className="checkout-page">
         <div className="empty-cart">
-          <span className="empty-icon">🧉</span>
+          <span className="empty-icon">🛍️</span>
           <h2>No tenés productos en el carrito</h2>
           <Link to="/tienda" className="btn-primary">Ver productos</Link>
         </div>

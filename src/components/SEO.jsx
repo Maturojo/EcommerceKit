@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-const BASE_URL = 'https://www.mateandcomdp.com.ar'
+const BASE_URL = 'https://ecommercekit.vercel.app'
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.jpg`
 
 export default function SEO({
@@ -12,8 +12,8 @@ export default function SEO({
   schema = null,
 }) {
   const fullTitle = title
-    ? `${title} | Mate&Co`
-    : 'Mate&Co — Mates artesanales y personalizados | Mar del Plata'
+    ? `${title} | MiTienda`
+    : 'MiTienda — Ropa, Accesorios y Calzado | Argentina'
 
   const fullCanonical = canonical ? `${BASE_URL}${canonical}` : BASE_URL
 

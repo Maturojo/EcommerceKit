@@ -51,7 +51,7 @@ export default function AdminClientes() {
       'Pedidos':       u.orderCount,
       'Total gastado': u.totalSpent,
     }))
-    exportToExcel(rows, 'Clientes', 'mateshop-clientes')
+    exportToExcel(rows, 'Clientes', 'ecommercekit-clientes')
   }
 
   return (

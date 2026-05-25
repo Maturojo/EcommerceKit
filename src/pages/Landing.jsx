@@ -112,7 +112,7 @@ export default function Landing() {
       {/* ── Banner CTA ── */}
       <section className="cta-banner">
         <h2>¿Listo para empezar tu ritual?</h2>
-        <p>Explorá nuestra tienda y encontrá el mate ideal para vos.</p>
+        <p>Explorá nuestra tienda y encontrá tu próximo look favorito.</p>
         <Link to="/tienda" className="btn-primary btn-large">Ir a la tienda</Link>
       </section>
 
