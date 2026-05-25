@@ -1,16 +1,11 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react'
+import { products as staticProducts, categories as staticCategories } from '../data/products'
 
 const StoreContext = createContext(null)
 
 const API = '/api'
 
-const DEFAULT_CATS = [
-  { id: 'ropa',       label: 'Ropa' },
-  { id: 'accesorios', label: 'Accesorios' },
-  { id: 'calzado',    label: 'Calzado' },
-  { id: 'bolsos',     label: 'Bolsos' },
-  { id: 'novedades',  label: 'Novedades' },
-]
+const DEFAULT_CATS = staticCategories.filter(c => c.id !== 'todos')
 
 export function StoreProvider({ children }) {
   const [products,   setProducts]   = useState([])
@@ -18,18 +13,17 @@ export function StoreProvider({ children }) {
   const [categories, setCategories] = useState(DEFAULT_CATS)
   const [loading,    setLoading]    = useState(true)
 
-  // ── Carga inicial desde MongoDB ──
+  // ── Carga inicial desde MongoDB, con fallback a datos estáticos ──
   useEffect(() => {
     Promise.all([
-      fetch(`${API}/products`).then(r => r.json()),
-      fetch(`${API}/orders`).then(r => r.json()),
-      fetch(`${API}/products?resource=categories`).then(r => r.json()),
+      fetch(`${API}/products`).then(r => r.json()).catch(() => null),
+      fetch(`${API}/orders`).then(r => r.json()).catch(() => null),
+      fetch(`${API}/products?resource=categories`).then(r => r.json()).catch(() => null),
     ]).then(([prods, ords, cats]) => {
-      setProducts(Array.isArray(prods) ? prods : [])
+      setProducts(Array.isArray(prods) && prods.length ? prods : staticProducts)
       setOrders(Array.isArray(ords) ? ords : [])
       setCategories(Array.isArray(cats) && cats.length ? cats : DEFAULT_CATS)
-    }).catch(err => console.error('Error cargando datos:', err))
-      .finally(() => setLoading(false))
+    }).finally(() => setLoading(false))
   }, [])
 
   // ── Products CRUD ──
